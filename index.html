@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>harish rathod web page</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+        }
+
+
+        #header {
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-image: linear-gradient(to bottom, rgba(10, 10, 10, 0.52), rgba(22, 19, 21, 0.73)), url("wl8.jpg");
+            width: 100%;
+            height: 100vh;
+            color: white;
+            position: relative;
+        }
+
+        #nav {
+            position: fixed;
+            /*     background-image: radial-gradient(rgb(25, 27, 26), rgb(200, 15, 15)); */
+            padding: 10px;
+            top: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: 100px;
+            border-radius: 5px;
+        }
+
+        #nav a {
+
+            margin: 0px 20px;
+            font-weight: 500;
+            text-decoration: none;
+            color: rgb(242, 239, 239);
+            font-size: 22px;
+            transition: transform 0.2s;
+
+
+        }
+
+        #header a img {
+            border-radius: 50%;
+            position: fixed;
+            top: 20px;
+            right: 30px;
+        }
+
+
+
+        #about {
+            border-top: 6px solid rgb(78, 78, 88);
+            background: black;
+            color: white;
+            align-items: center;
+            padding: 20px;
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        .profile img {
+            margin: 50px 30px 30px 20px;
+            border-radius: 50%;
+            background-size: cover;
+            background-position: center;
+            border: 2px solid red;
+        }
+
+
+        .head {
+            display: flex;
+            flex-direction: column;
+            margin: 20px 50px;
+        }
+
+        #Team {
+            padding: 50px;
+            background: black;
+        }
+
+        .row {
+            align-items: center;
+            display: flex;
+            margin: 10px;
+            flex-wrap: wrap;
+        }
+
+        .col {
+            height: 230px;
+            background: white;
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+
+            border: 3px solid rgb(223, 114, 18);
+            padding: 3px;
+            text-align: center;
+        }
+
+        #header>#nav>a:hover {
+            font-size: 23px;
+            color: black;
+
+        }
+
+        #welcome {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 70px;
+            color: rgb(247, 238, 242);
+            text-align: center;
+            position: absolute;
+            top: 60%;
+            left: 5%;
+        }
+
+        #Team>.row>.col>img {
+            margin-right: 0;
+            padding-right: 0;
+            text-align: center;
+        }
+
+        #Team .row .col:hover {
+            transform: scale(1.05);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: rgb(175, 247, 7);
+        }
+
+        #videos {
+            border-top: 6px solid rgb(78, 78, 88);
+            background-color: black;
+        }
+
+        #videos .row .desc {
+            background-color: black;
+            color: white;
+            border: none;
+            width: 40%;
+            margin: 50px 50px;
+        }
+
+        iframe {
+            border: 2px solid white;
+            margin: 50px;
+        }
+
+        #videos .row .desc h1 {
+            color: rgb(231, 9, 128);
+        }
+
+        #header button {
+            visibility: hidden;
+        }
+
+        #videos .row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #videos .row .row-1,
+        .row-2,
+        .row-3,
+        .row-4 {
+            display: flex;
+            flex-direction: row;
+        }
+
+        iframe:hover {
+            transform: scale(1.03);
+            border: 2px solid rgb(246, 215, 11);
+        }
+
+        #footer {
+            background: #0c012d;
+            color: white;
+            width: 100%;
+            height: 300px;
+            margin: 0;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .foot {
+            margin: 20px;
+            width: 20%;
+
+        }
+#footer h2{
+    margin:10px 0;
+    color:red;
+}
+#footer ul{
+    list-style-type:none;
+    color:#b3b1b1;
+}
+#footer #ul{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+}
+#footer #ul a{
+    color:#989696;
+    text-decoration: none;
+}
+#footer #ul a:hover{
+    transform: scale(1.01);
+    color:white;
+}
+.logo{
+    display: flex;
+    float: left;
+    align-items: center;
+    justify-content: center;
+
+}
+section{
+    margin:10px 0;
+    color:aqua;
+}
+#Team .about{
+    margin-top:5px;
+    color:rgb(31, 83, 186);
+}
+#videos  h1{
+    margin-top:30px;
+}
+#footer #fuo a:hover{
+    transform: scale(1.2);
+}
+        @media(max-width:860px) {
+            #header button {
+                visibility: visible;
+
+                border-radius: 50%;
+                margin: 10px;
+                position: fixed;
+            }
+
+            #nav {
+                background: #02153d;
+                display: none;
+                height: 100%;
+                width: 0;
+                top: 0;
+                padding-top: 60px;
+                position: fixed;
+                left: 0;
+                z-index: 1;
+                overflow-x: hidden;
+                transition: 0.5s;
+
+            }
+
+            #nav a {
+
+                display: block;
+                padding: 8px 8px 8px 32px;
+                text-decoration: none;
+                font-size: 24px;
+                color: #818181;
+                display: block;
+                transition: 0.3s;
+
+            }
+
+            #nav button {
+                position: absolute;
+                top: 0;
+                right: 20px;
+                font-size: 36px;
+                width: 40px;
+                margin-left: 50px;
+            }
+
+            #header>#nav>a:hover {
+                color: #f1f1f1;
+                font-size: 26px;
+            }
+
+            #welcome {
+                text-align: center;
+                top: 50%;
+            }
+
+            #about {
+                border-top: 6px solid rgb(78, 78, 88);
+                background: black;
+                color: white;
+                align-items: center;
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+
+            }
+
+            .head {
+                display: flex;
+                flex-direction: column;
+                margin: 20px;
+            }
+
+            #videos {
+                padding: 0;
+                margin: 0;
+            }
+
+            #Team .row {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #videos .row .desc {
+                width: 80%;
+                margin: 25px;
+            }
+
+            #videos>.row>.row-1,
+            .row-3 {
+                display: flex;
+                flex-direction: column;
+            }
+
+            #videos>.row>.row-2,
+            .row-4 {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+
+            iframe {
+                width: 300px;
+                height: 200px;
+                margin:50px 20px;
+
+            }
+            #footer #ul a{
+                color:#f1f1f1;
+            }
+            #footer {
+                height: auto;
+            }
+            #footer .foot {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                width:100%;
+                text-align: center;
+            }
+        
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <button onclick="Button()"><img src="nav_icon.png" width="40px" height="40px"></button>
+        <div class="navbar" id="nav">
+            <button onclick="clsButton()">&times;</button>
+            <a href="#header">Home</a>
+            <a href="#about">About</a>
+           
+            <a href="#videos">Videos library</a>
+            <a href="#Team">Team</a>
+        
+            <a href="#footer">Explore us</a>
+
+        </div>
+        <a href="#about"> <img src="hrprofile.jpg" alt="logo" width="50px" height="50px"></a>
+       
+        <div id="welcome">
+
+        </div>
+
+    </div>
+    <div id="about">
+        <div class="profile"><img src="hrprofile.jpg" width="300px" height="300px"></div>
+        <div class="head">
+            <h1>about me</h1>
+            <p>
+                Hi All, I'm Harish Rathod!, and my Stage name is "Townsinger"  Music Composer, and Lyric Writer who sings Hindi Devotional Songs, 
+                Does stage performances, sings Melody Songs, etc. I have also created many videos on Youtube and other social media platforms,
+                 which have gained popularity in India.
+
+                I have been singing for the past few years and released my music album, which consists of many melodious songs.
+                 I have also worked with many other singers as a lyricist.
+                
+                My album Mujhko Tere Darsham Hojate was released on YouTube, received more than 250K views within a short period,
+                 and still receives thousands daily. My other album Khatu Dham Aaya has also received a significant response from 
+                 all over the world with more than 190K views, and the recent album Main Saans Hoon received more than 300k views
+                  and continues to rock!
+            </p>
+        </div>
+    </div>
+    
+    <div id="videos">
+        <h1>Videos library</h1>
+        <div class="row">
+            <div class="row-1">
+                <div class="desc">
+                    <h1>Achieved 1 Million views... </h1>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut quia eveniet blanditiis! Ut fugiat qui
+                    quia nostrum delectus ab sed, soluta in, suscipit consectetur et esse quos id, sequi accusantium.
+
+                </div>
+                <div class="iframe">
+                    <iframe width="450" height="250" src="https://www.youtube.com/embed/Y8o6T9S9tBA"
+                        title="YouTube video player" frameborder="0" autoplay
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="row-2">
+                <div class="iframe">
+                    <iframe width="450" height="250" src="https://www.youtube.com/embed/aNvw4DvEzEA"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="desc">
+                    <h1> Most lovable song... </h1>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut quia eveniet blanditiis! Ut fugiat qui
+                    quia nostrum delectus ab sed, soluta in, suscipit consectetur et esse quos id, sequi accusantium.
+
+                </div>
+            </div>
+            <div class="row-3">
+                <div class="desc">
+                    <h1>On the way to khatudham... </h1>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut quia eveniet blanditiis! Ut fugiat qui
+                    quia nostrum delectus ab sed, soluta in, suscipit consectetur et esse quos id, sequi accusantium.
+
+                </div>
+                <div class="iframe">
+                    <iframe width="450" height="250" src="https://www.youtube.com/embed/UipiAwv4YVw"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="row-4">
+                <div class="iframe">
+                    <iframe width="450" height="250" src="https://www.youtube.com/embed/_8M_1oQQ2Gc"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="desc">
+                    <h1> A devotional piece... </h1>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut quia eveniet blanditiis! Ut fugiat qui
+                    quia nostrum delectus ab sed, soluta in, suscipit consectetur et esse quos id, sequi accusantium.
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="Team">
+        <h1>Our Team</h1>
+        <div class="row">
+            <div class="col">
+                <img src="slider_img1.jpg" width="200px" height="200px">
+                <div class="about">
+                Name - Harish rathod<br>
+                Age - 25<br>
+                profession - Singer
+                </div>
+            </div>
+
+            <div class="col">
+                <img src="slider_img2.jpg" width="200px" height="200px">
+            <div class="about">
+                Name - Somendra dwivedi<br>
+                Age - 19<br>
+                profession - Singer
+                </div>
+            </div>
+            <div class="col">
+                <img src="slider_img3.jpg" width="200px" height="200px">
+            <div class="about">
+                Name - Nilesh malviya<br>
+                Age - 19<br>
+                profession - content writer
+                </div>
+            </div>
+            <div class="col">
+                <img src="slider_img4.jpg" width="200px" height="200px">
+<div class="about">
+                Name - Vaibhav<br>
+                Age - 19<br>
+                profession - Director
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="foot" id="ac">
+            <h2>About company</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi consequuntur dolores natus corrupti autem
+                repellat aspernatur, illum cumque aperiam aut.</p>
+                <section>
+                    <h3>contact us-</h3>
+                    Mobile no : 1234567890<br>
+                    Email address : avcdefg123@gmail.com
+                   </section>
+        </div>
+        <div class="foot" id="os">
+            <h2>Our services</h2>
+            <ul>
+                <li>Team compose</li>
+                <li>Team directs</li>
+                <li>organise Team concerts</li>
+                <li>Teaching</li>
+            </ul>
+           
+        </div>
+        <div class="foot" id="ul">
+            <h2>Useful links</h2>
+            <a href="#header">Home</a>
+            <a href="#about">About</a>
+            <a href="#Team">Music Gallery</a>
+            <a href="#videos">Videos library</a>
+            <a href="#footer">Explore us</a>
+        </div>
+       
+        <div class="foot" id="fuo">
+            <h2>Follow us on</h2>
+            <div class="logo">
+                <a href="https://www.youtube.com/@HarishRathod" target="_blank"><img src="yt-logo.png" width="40" height="40"></a>
+            </div>
+            <div class="logo">
+                <a href="#"><img src="Facebook-logo.png" width="40" height="40"></a>
+            </div>
+            <div class="logo">
+                <a href="#"><img src="insta_logo.png" width="40" height="40"></a>
+            </div>
+            <div class="logo">
+                <a href="#"><img src="tw_logo.png" width="40" height="40"></a>
+            </div>
+          
+        </div>
+        
+    </div>
+    <script>
+        function Button() {
+            document.getElementById("nav").style.width = "250px";                 //navigation button for mobile phones
+            var x = document.getElementById("nav")
+            var p = x.style.display;
+            if (p == "none") {
+                x.style.display = "block";
+
+            }
+            else {
+                x.style.display = "none";
+            }
+
+
+
+        }
+        function clsButton() {
+            document.getElementById("nav").style.width = "0";
+
+        }
+
+        var i = 0;
+        txt = "Welcome to my music website...";
+        speed = 65;
+
+        function welcome() {
+            if (i < txt.length) {
+                document.getElementById("welcome").innerHTML += txt[i];
+                i++;
+
+            } setTimeout(welcome, speed)
+
+        }
+        welcome();
+    </script>
+</body>
+
+</html>
